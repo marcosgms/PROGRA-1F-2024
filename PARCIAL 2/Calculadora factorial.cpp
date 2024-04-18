@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
-
+void limpiarPantalla(){
+	{
+	system("cls");
+}
+}
 int main(int argc, char *argv[]) { 
 	int control;
 	do{	
@@ -26,9 +30,8 @@ int main(int argc, char *argv[]) {
 	if (control != 1 && control != 2) {
 		control == 1;
 	}
+	limpiarPantalla();
 	} while(control==1);
-	
-	
-	
+	cout<<"Usted salió de la calculadora";
 	return 0;
 }
