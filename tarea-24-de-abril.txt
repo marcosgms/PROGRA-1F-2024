@@ -1,0 +1,77 @@
+public class MyProgram extends ConsoleProgram
+{
+    public void run()
+    {
+    //Declarar una variable de cada uno de los siguientes tipos:
+        String texto = "Hola mundo, ";
+        Integer numero = 1;
+        Double numero1 = 74.55;
+        Boolean desis = true;
+      
+    //Mostrar un mensaje uniendo dos variables de tipo String.
+        String texto2 = "estoy intentando programar en Java";  
+        System.out.println(texto + texto2);
+    
+    //Realizar la suma de dos numeros de tipo Entero.  
+        Double suma = Double.valueOf(numero);
+        suma = numero + numero1;
+        System.out.println(suma);
+        
+    //Utilizar la transformación de tipos de variable
+    //(de Integer a Double, de String a Double, de Double a String, de Double a Integer).
+        Integer conversion1 = 54;
+        Integer converDouble = Double.valueOf(conversion1).intValue();
+        System.out.println(conversion1);
+    
+        String texto3 = "6.6";
+        Double conversionString = Double.valueOf(texto3);
+        System.out.println(conversionString);
+        
+        String conversionDoubleString = numero1.toString();
+        System.out.println(conversionDoubleString);
+        
+        Integer conversionDoubleInteger = Double.valueOf(numero1).intValue();
+        System.out.println(conversionDoubleInteger);
+
+    //Convertir los siguientes valores Double a Integer e imprimirlos en pantalla:
+        Double num=3.14;
+        Double num1=2.8689;
+        Double num2=5.85;
+        Double num3=4.49;
+        Double num4=2.10;
+        
+        Integer conversion_entero1 = Double.valueOf(num).intValue();
+        System.out.println(conversion_entero1);
+        
+        Integer conversion_entero2 = Double.valueOf(num1).intValue();
+        System.out.println(conversion_entero2);
+        
+        Integer conversion_entero3 = Double.valueOf(num2).intValue();
+        System.out.println(conversion_entero3);
+        
+        Integer conversion_entero4 = Double.valueOf(num3).intValue();
+        System.out.println(conversion_entero4);
+        
+        Integer conversion_entero5 = Double.valueOf(num4).intValue();
+        System.out.println(conversion_entero5);
+        
+    //Convertir los siguientes valores de Int a Double e imprimirlos en pantalla:
+        Integer numb1 = 1945;
+        Integer numb2 = 2010;
+        Integer numb3 = 218;
+        Integer numb4 = 684;
+        
+        Double conversion_double1 = Double.valueOf(numb1);
+        System.out.println(conversion_double1);
+        
+        Double conversion_double2 = Double.valueOf(numb2);
+        System.out.println(conversion_double2);
+        
+        Double conversion_double3 = Double.valueOf(numb3);
+        System.out.println(conversion_double3);
+        
+        Double conversion_double4 = Double.valueOf(numb4);
+        System.out.println(conversion_double4);
+    
+    }
+}
